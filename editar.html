@@ -9,13 +9,11 @@
     <title>Editar | Finanças da Quebrada</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/style.css">
-
     <link rel="stylesheet" href="css/responsive.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
@@ -26,105 +24,101 @@
 
 <header>
 
-<div class="container">
+    <div class="container">
 
-<a href="index.html" class="logo">
+        <a href="index.html" class="logo">
+            <img src="img/logo.png" alt="Logo Finanças da Quebrada">
+        </a>
 
-<img src="img/logo.png" alt="Logo">
+        <nav>
+            <ul>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="editar.html">Editar</a></li>
+                <li><a href="#">Perfil</a></li>
+            </ul>
+        </nav>
 
-</a>
+        <div class="header-buttons">
+            <a href="index.html" class="btn-header">Sair</a>
+        </div>
 
-<nav>
-
-<ul>
-
-<li><a href="dashboard.html">Dashboard</a></li>
-
-<li><a href="editar.html">Editar</a></li>
-
-<li><a href="#">Perfil</a></li>
-
-</ul>
-
-</nav>
-
-<div class="header-buttons">
-
-<a href="index.html" class="btn-header">
-
-Sair
-
-</a>
-
-</div>
-
-</div>
+    </div>
 
 </header>
 
 <section class="dashboard">
 
-<div class="container">
+    <div class="container">
 
-<h1>Editar Informações</h1>
+        <h1>Editar Informações</h1>
+        <p>Atualize os dados do seu comércio e gerencie os cursos disponíveis.</p>
 
-<p>Atualize os dados do seu comércio e gerencie os cursos disponíveis.</p>
+        <!-- EDITAR COMÉRCIO -->
+        <div class="edit-section">
 
-<!-- EDITAR COMÉRCIO -->
+            <h2>Meu Comércio</h2>
+            <p class="subtitulo">Edite as informações do seu negócio</p>
 
-<div class="edit-section">
+            <form id="form-comercio" class="form-grid">
 
-<h2>Meu Comércio</h2>
+                <div class="input-group">
+                    <label for="nome">Nome do comércio</label>
+                    <input type="text" id="nome" required>
+                </div>
 
-<p class="subtitulo">Edite as informações do seu negócio</p>
+                <div class="input-group">
+                    <label for="categoria">Categoria</label>
+                    <select id="categoria">
+                        <option>Mercado</option>
+                        <option>Loja de roupas</option>
+                        <option>Salão de beleza</option>
+                        <option>Alimentação</option>
+                        <option>Serviços</option>
+                        <option>Outro</option>
+                    </select>
+                </div>
 
-<form id="form-comercio" class="form-grid">
+                <div class="input-group">
+                    <label for="telefone">Telefone</label>
+                    <input type="text" id="telefone" placeholder="(11) 99999-9999" required>
+                </div>
 
-<div class="input-group">
-<label for="nome">Nome do comércio</label>
-<input type="text" id="nome" required>
-</div>
+                <div class="input-group">
+                    <label for="cidade">Cidade</label>
+                    <input type="text" id="cidade" required>
+                </div>
 
-<div class="input-group">
-<label for="categoria">Categoria</label>
-<select id="categoria">
-<option>Mercado</option>
-<option>Loja de roupas</option>
-<option>Salão de beleza</option>
-<option>Alimentação</option>
-<option>Serviços</option>
-<option>Outro</option>
-</select>
-</div>
+            </form>
 
-<div class="input-group">
-<label for="telefone">Telefone</label>
-<input type="text" id="telefone" placeholder="(11) 99999-9999" required>
-</div>
+            <div class="edit-actions">
+                <button type="submit" form="form-comercio" class="btn-primary">
+                    Salvar Alterações
+                </button>
+            </div>
 
-<div class="input-group">
-<label for="cidade">Cidade</label>
-<input type="text" id="cidade" required>
-</div>
+        </div>
 
-</form>
-
-<div class="edit-actions">
-<button type="submit" form="form-comercio" class="btn-primary">Salvar Alterações</button>
-</div>
-
-</div>
-
+    </div>
 
 </section>
 
 <footer>
 
-<div class="copyright">
-
-© 2026 Finanças da Quebrada
-
-</div>
+    <div class="copyright">
+       &copy; 2026 Finanças da Quebrada • Todos os direitos reservados 
+    </div>
 
 </footer>
 
+<!-- ♿ ACESSIBILIDADE (USERWAY) -->
+<script>
+  window.addEventListener("DOMContentLoaded", function () {
+    var s = document.createElement("script");
+    s.src = "https://cdn.userway.org/widget.js";
+    s.setAttribute("data-account", "SEU_ID_AQUI");
+    document.body.appendChild(s);
+  });
+</script>
+
+</body>
+</html>
