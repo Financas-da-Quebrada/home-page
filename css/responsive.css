@@ -19,6 +19,7 @@ justify-content:center;
 margin:20px 0;
 
 }
+
 .header-buttons{
 
 display:flex;
@@ -90,8 +91,6 @@ flex-direction:column;
 
 }
 
-}
-
 .planos-grid{
 
 grid-template-columns:1fr;
@@ -101,6 +100,27 @@ grid-template-columns:1fr;
 .plano-card.destaque{
 
 transform:none;
+
+}
+
+.dashboard-cards{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.acoes-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.cursos-grid{
+
+grid-template-columns:1fr 1fr;
+max-width:100%;
+
+}
 
 }
 
@@ -199,7 +219,6 @@ align-items:center;
 
 }
 
-<<<<<<< HEAD
 .planos{
 
 padding:60px 0;
@@ -223,8 +242,20 @@ font-size:24px;
 font-size:34px;
 
 }
+.comercio-info{
 
-=======
+grid-template-columns:1fr;
+
+}
+
+.comercio-header{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
 }
 
 /* =====================================
@@ -301,6 +332,14 @@ font-size:34px;
 
 }
 
+.cursos-grid{
+
+    grid-template-columns:1fr;
+
+    max-width:100%;
+
+}
+
 .acoes-grid{
 
     grid-template-columns:1fr;
@@ -318,6 +357,5 @@ font-size:34px;
     min-width:650px;
 
 }
->>>>>>> 3dc6c96 (Crie a estrutura HTML e cssresposivo)
 
 }

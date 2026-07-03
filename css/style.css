@@ -2291,11 +2291,97 @@ border-radius:20px;
 
 box-shadow:0 15px 35px rgba(0,0,0,.08);
 
+display:flex;
+
+flex-direction:column;
+
+gap:24px;
+
 }
 
-.comercio-card p{
+.comercio-header{
 
-margin:15px 0;
+display:flex;
+
+align-items:center;
+
+gap:16px;
+
+}
+
+.comercio-icon{
+
+width:56px;
+
+height:56px;
+
+border-radius:14px;
+
+background:#F3EDFF;
+
+color:#6D28D9;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+font-size:24px;
+
+flex-shrink:0;
+
+}
+
+.comercio-header h3{
+
+font-size:22px;
+
+color:#222;
+
+}
+
+.comercio-info{
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:16px;
+
+background:#F5F0FF;
+
+padding:20px;
+
+border-radius:14px;
+
+}
+
+.comercio-info p{
+
+display:flex;
+
+align-items:center;
+
+gap:8px;
+
+font-size:14px;
+
+color:#555;
+
+margin:0;
+
+}
+
+.comercio-info p i{
+
+color:#6D28D9;
+
+}
+
+.comercio-card .btn-primary{
+
+width:max-content;
 
 }
 
@@ -2303,4 +2389,87 @@ margin:15px 0;
 
 padding:70px 0;
 
+}
+/*==========================
+DASHBOARD CARDS — ROXO
+===========================*/
+
+.dashboard-card{
+
+    background: linear-gradient(135deg, #6D28D9, #5527B7);
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+}
+
+.dashboard-card i{
+
+    color: #FFD44A;
+
+}
+
+.dashboard-card h3{
+
+    color: rgba(255,255,255,.8);
+
+}
+
+.dashboard-card h2{
+
+    color: #fff;
+
+}
+
+.dashboard-card p{
+
+    color: rgba(255,255,255,.85);
+
+    margin: 10px 0 20px;
+
+    line-height: 1.5;
+
+}
+
+.dashboard-card .btn-primary{
+
+    background: #fff;
+
+    color: #6D28D9;
+
+}
+
+.dashboard-card .btn-primary:hover{
+
+    background: #FFD44A;
+
+    color: #38106C;
+
+}
+
+/* Grid dos cursos: 3 colunas centralizadas */
+
+.cursos-grid{
+
+    grid-template-columns: repeat(3, 1fr);
+
+    max-width: 900px;
+
+    margin: 0 auto;
+
+}
+html {
+    scroll-behavior: smooth;
+}
+
+#meu-comercio {
+    scroll-margin-top: 100px;
+}
+#form-comercio button{
+    margin-top: 20px;
 }

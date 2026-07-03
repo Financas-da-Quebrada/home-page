@@ -41,9 +41,11 @@
 
 <li><a href="#">Dashboard</a></li>
 
-<li><a href="#">Meu Comércio</a></li>
+<li><a href="#meu-comercio">Meu Comércio</a></li>
 
 <li><a href="#">Cursos</a></li>
+
+<li><a href="editar.html">Editar</a></li>
 
 <li><a href="#">Perfil</a></li>
 
@@ -164,7 +166,7 @@ Acompanhe seu comércio e organize suas finanças.
 
 <h2>Cursos disponíveis</h2>
 
-<div class="dashboard-cards">
+<div class="dashboard-cards cursos-grid" id="cursos-lista-dashboard">
 
 <div class="dashboard-card">
 
@@ -214,33 +216,33 @@ Começar
 
 </section>
 
-<div class="container">
+<div class="container" id="meu-comercio">
 
 <h2>Meu Comércio</h2>
 
-<div class="comercio-card">
+<div class="comercio-card" id="comercio-card">
 
-<h3>Mercadinho do Kaio</h3>
+<div class="comercio-header">
 
-<p>
+<div class="comercio-icon">
+<i class="fa-solid fa-store"></i>
+</div>
 
-Categoria: Mercado
+<h3 id="comercio-nome">Mercadinho do Kaio</h3>
 
-</p>
+</div>
 
-<p>
+<div class="comercio-info">
 
-Telefone: (11)99999-9999
+<p><i class="fa-solid fa-tag"></i> Categoria: <span id="comercio-categoria">Mercado</span></p>
 
-</p>
+<p><i class="fa-solid fa-phone"></i> Telefone: <span id="comercio-telefone">(11) 99999-9999</span></p>
 
-<p>
+<p><i class="fa-solid fa-location-dot"></i> Cidade: <span id="comercio-cidade">São Paulo</span></p>
 
-Cidade: São Paulo
+</div>
 
-</p>
-
-<a href="#" class="btn-primary">
+<a href="editar.html" class="btn-primary">
 
 Editar Informações
 
@@ -414,10 +416,7 @@ data:[1800,2100,2600,3000]
 
 </script>
 
-<script>
-
-
-</script>
+<script src="js/dashboard-sync.js"></script>
 
 </body>
 
