@@ -199,6 +199,7 @@ align-items:center;
 
 }
 
+<<<<<<< HEAD
 .planos{
 
 padding:60px 0;
@@ -223,5 +224,100 @@ font-size:34px;
 
 }
 
+=======
+}
+
+/* =====================================
+      RESPONSIVO CADASTRO
+===================================== */
+
+@media(max-width:768px){
+
+.form-card{
+
+    padding:35px;
+
+}
+
+.form-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.cadastro-hero h1{
+
+    font-size:38px;
+
+}
+
+.form-card h2{
+
+    font-size:30px;
+
+}
+
+}
+
+/*====================================
+      DASHBOARD RESPONSIVO
+====================================*/
+
+@media(max-width:992px){
+
+.dashboard-cards{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.acoes-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:768px){
+
+.dashboard h1{
+
+    font-size:34px;
+
+    text-align:center;
+
+}
+
+.dashboard p{
+
+    text-align:center;
+
+}
+
+.dashboard-cards{
+
+    grid-template-columns:1fr;
+
+}
+
+.acoes-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.movimentacoes{
+
+    overflow-x:auto;
+
+}
+
+.movimentacoes table{
+
+    min-width:650px;
+
+}
+>>>>>>> 3dc6c96 (Crie a estrutura HTML e cssresposivo)
 
 }

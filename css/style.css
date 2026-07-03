@@ -1806,3 +1806,501 @@ DEPOIMENTOS
     transform: translateY(-3px);
 
 }
+
+/* =====================================
+            CADASTRO
+===================================== */
+
+.cadastro{
+
+    padding:100px 0;
+
+    background:#fafafa;
+
+}
+
+.cadastro-hero{
+
+    padding:90px 0 50px;
+
+    text-align:center;
+
+}
+
+.cadastro-hero h1{
+
+    font-size:52px;
+
+    margin-bottom:20px;
+
+}
+
+.cadastro-hero p{
+
+    max-width:650px;
+
+    margin:auto;
+
+    color:#666;
+
+    line-height:1.8;
+
+}
+
+.form-card{
+
+    background:#fff;
+
+    max-width:1000px;
+
+    margin:auto;
+
+    padding:60px;
+
+    border-radius:25px;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.08);
+
+}
+
+.form-card h2{
+
+    text-align:center;
+
+    color:#6D28D9;
+
+    font-size:38px;
+
+    margin-bottom:10px;
+
+}
+
+.subtitulo{
+
+    text-align:center;
+
+    color:#666;
+
+    margin-bottom:50px;
+
+}
+
+.form-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:25px;
+
+}
+
+.input-group{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.input-group label{
+
+    margin-bottom:10px;
+
+    font-weight:600;
+
+}
+
+.input-group input,
+
+.input-group select{
+
+    padding:16px;
+
+    border:1px solid #ddd;
+
+    border-radius:12px;
+
+    font-size:16px;
+
+    transition:.3s;
+
+    font-family:'Inter',sans-serif;
+
+}
+
+.input-group input:focus,
+
+.input-group select:focus{
+
+    border-color:#6D28D9;
+
+    outline:none;
+
+    box-shadow:0 0 10px rgba(109,40,217,.20);
+
+}
+
+.checkbox-group{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+
+    margin:40px 0;
+
+}
+
+.checkbox-group label{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    color:#555;
+
+}
+
+.checkbox-group input{
+
+    width:18px;
+
+    height:18px;
+
+}
+
+.form-card button{
+
+    width:100%;
+
+    border:none;
+
+    cursor:pointer;
+
+    font-size:17px;
+
+}
+
+.form-card button:hover{
+
+    transform:translateY(-3px);
+
+}
+
+.login-link{
+
+    text-align:center;
+
+    margin-top:35px;
+
+}
+
+.login-link a{
+
+    color:#6D28D9;
+
+    font-weight:700;
+
+    text-decoration:none;
+
+}
+
+.login-link a:hover{
+
+    color:#0B8D82;
+
+}
+
+/*====================================
+            DASHBOARD
+====================================*/
+
+.dashboard{
+
+    padding:80px 0 50px;
+
+    background:#fafafa;
+
+}
+
+.dashboard h1{
+
+    font-size:46px;
+
+    color:#6D28D9;
+
+    margin-bottom:15px;
+
+}
+
+.dashboard p{
+
+    color:#666;
+
+    margin-bottom:45px;
+
+    font-size:18px;
+
+}
+
+.dashboard-cards{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:25px;
+
+}
+
+.dashboard-card{
+
+    background:#fff;
+
+    padding:35px;
+
+    border-radius:22px;
+
+    text-align:center;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.dashboard-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.dashboard-card i{
+
+    font-size:38px;
+
+    color:#0B8D82;
+
+    margin-bottom:20px;
+
+}
+
+.dashboard-card h3{
+
+    color:#777;
+
+    margin-bottom:15px;
+
+    font-size:18px;
+
+}
+
+.dashboard-card h2{
+
+    color:#6D28D9;
+
+    font-size:34px;
+
+}
+
+/*====================================
+        AÇÕES RÁPIDAS
+====================================*/
+
+.acoes{
+
+    padding:60px 0;
+
+}
+
+.acoes h2{
+
+    text-align:center;
+
+    color:#6D28D9;
+
+    margin-bottom:40px;
+
+    font-size:36px;
+
+}
+
+.acoes-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:25px;
+
+}
+
+.acao{
+
+    background:#fff;
+
+    text-decoration:none;
+
+    color:#222;
+
+    padding:35px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+    font-weight:600;
+
+}
+
+.acao:hover{
+
+    background:#6D28D9;
+
+    color:#fff;
+
+    transform:translateY(-8px);
+
+}
+
+.acao i{
+
+    display:block;
+
+    font-size:42px;
+
+    margin-bottom:18px;
+
+}
+
+/*====================================
+      MOVIMENTAÇÕES
+====================================*/
+
+.movimentacoes{
+
+    padding:70px 0;
+
+}
+
+.movimentacoes h2{
+
+    color:#6D28D9;
+
+    margin-bottom:30px;
+
+    font-size:36px;
+
+}
+
+.movimentacoes table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    background:#fff;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+}
+
+.movimentacoes th{
+
+    background:#6D28D9;
+
+    color:#fff;
+
+    padding:18px;
+
+}
+
+.movimentacoes td{
+
+    padding:20px;
+
+    border-bottom:1px solid #eee;
+
+}
+
+.movimentacoes tr:hover{
+
+    background:#f8f5ff;
+
+}
+
+.perfil{
+
+padding:60px 0;
+
+}
+
+.perfil-card{
+
+background:#fff;
+
+padding:35px;
+
+display:flex;
+
+align-items:center;
+
+gap:30px;
+
+border-radius:20px;
+
+box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+}
+
+.perfil-card img{
+
+width:110px;
+
+height:110px;
+
+border-radius:50%;
+
+}
+
+.comercio{
+
+padding:70px 0;
+
+}
+
+.comercio-card{
+
+background:#fff;
+
+padding:40px;
+
+border-radius:20px;
+
+box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+}
+
+.comercio-card p{
+
+margin:15px 0;
+
+}
+
+.cursos-dashboard{
+
+padding:70px 0;
+
+}
