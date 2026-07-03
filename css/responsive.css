@@ -92,6 +92,18 @@ flex-direction:column;
 
 }
 
+.planos-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.plano-card.destaque{
+
+transform:none;
+
+}
+
 /* ==========================
 CELULAR
 ========================== */
@@ -186,5 +198,30 @@ justify-content:center;
 align-items:center;
 
 }
+
+.planos{
+
+padding:60px 0;
+
+}
+
+.plano-card{
+
+padding:35px 30px;
+
+}
+
+.plano-titulo{
+
+font-size:24px;
+
+}
+
+.plano-preco .valor{
+
+font-size:34px;
+
+}
+
 
 }
