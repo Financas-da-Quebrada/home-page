@@ -2069,7 +2069,7 @@ DEPOIMENTOS
 
     box-shadow:0 15px 40px rgba(0,0,0,.08);
 
-    transition:.3s;
+    transition:.3s;     
 
 }
 
@@ -2472,4 +2472,7 @@ html {
 }
 #form-comercio button{
     margin-top: 20px;
+}
+.edit-actions {
+    margin-top: 25px;
 }
