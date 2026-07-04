@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 card.innerHTML = `
                     <h3>${curso.titulo}</h3>
                     <p>${curso.descricao}</p>
-                    <a href="#" class="btn-primary">Começar</a>
+                    <a href="cursos.html" class="btn-primary">Começar</a>
                 `;
 
                 container.appendChild(card);

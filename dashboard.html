@@ -12,420 +12,455 @@
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="css/style.css">
 
     <link rel="stylesheet" href="css/responsive.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    
+
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 
 <body>
 
-<header>
+    <header>
 
-<div class="container">
+        <div class="container">
 
-<a href="index.html" class="logo">
+            <a href="index.html" class="logo">
 
-<img src="img/logo.png" alt="Logo">
+                <img src="img/logo.png" alt="Logo">
 
-</a>
+            </a>
 
-<nav>
+            <nav>
 
-<ul>
+                <ul>
 
-<li><a href="#">Dashboard</a></li>
+                    <li><a href="#">Dashboard</a></li>
 
-<li><a href="#meu-comercio">Meu Comércio</a></li>
+                    <li><a href="#meu-comercio">Meu Comércio</a></li>
 
-<li><a href="#">Cursos</a></li>
+                    <li><a href="cursos.html">Cursos</a></li>
 
-<li><a href="editar.html">Editar</a></li>
+                    <li><a href="editar.html">Editar</a></li>
 
-<li><a href="#">Perfil</a></li>
+                    <li><a href="#">Perfil</a></li>
 
-</ul>
+                </ul>
 
-</nav>
+            </nav>
 
-<div class="header-buttons">
+            <div class="header-buttons">
 
-<a href="index.html" class="btn-header">
+                <a href="index.html" class="btn-header">
 
-Sair
+                    Sair
 
-</a>
+                </a>
 
-</div>
+            </div>
 
-</div>
+        </div>
 
-</header>
+    </header>
 
-<section class="dashboard">
-<section class="perfil">
+    <section class="dashboard">
+        <section class="perfil">
 
-    <div class="container">
+            <div class="container">
 
-        <div class="perfil-card">
+                <div class="perfil-card">
 
-            <img src="img/foto-perfil-empreendedor.jpeg" alt="Usuário">
+                    <img src="img/foto-perfil-empreendedor.jpeg" alt="Usuário">
 
-            <div>
+                    <div>
 
-                <h2>Kaio Moura</h2>
+                        <h2>Kaio Moura</h2>
 
-                <p>Empreendedor</p>
+                        <p>Empreendedor</p>
 
-                <span>Comércio ativo desde 2026</span>
+                        <span>Comércio ativo desde 2026</span>
 
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <div class="container">
+
+            <h1>Olá, Empreendedor 👋</h1>
+
+            <p>
+
+                Bem-vindo ao Finanças da Quebrada.
+
+                Acompanhe seu comércio e organize suas finanças.
+
+            </p>
+
+            <div class="dashboard-cards">
+
+                <div class="dashboard-card">
+
+                    <i class="fa-solid fa-wallet"></i>
+
+                    <h3>Receitas</h3>
+
+                    <h2 id="valor-receitas">R$ 12.500</h2>
+
+                </div>
+
+                <div class="dashboard-card">
+
+                    <i class="fa-solid fa-money-bill-wave"></i>
+
+                    <h3>Despesas</h3>
+
+                    <h2 id="valor-despesas">R$ 6.400</h2>
+
+                </div>
+
+                <div class="dashboard-card">
+
+                    <i class="fa-solid fa-chart-line"></i>
+
+                    <h3>Saldo</h3>
+
+                    <h2 id="valor-saldo">R$ 6.100</h2>
+
+                </div>
+
+                <div class="dashboard-card">
+
+                    <i class="fa-solid fa-graduation-cap"></i>
+
+                    <h3>Cursos</h3>
+
+                    <h2>12</h2>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="acoes">
+
+        <div class="container">
+
+            <h2>Ações rápidas</h2>
+
+            <section class="comercio">
+
+                <section class="cursos-dashboard">
+
+                    <div class="container">
+
+                        <h2>Cursos disponíveis</h2>
+
+                        <div class="dashboard-cards cursos-grid" id="cursos-lista-dashboard">
+
+                            <div class="dashboard-card">
+
+                                <h3>Educação Financeira</h3>
+
+                                <p>Aprenda a organizar seu dinheiro.</p>
+
+                                <a href="cursos.html" class="btn-primary">
+
+                                    Começar
+
+                                </a>
+
+                            </div>
+
+                            <div class="dashboard-card">
+
+                                <h3>Marketing Digital</h3>
+
+                                <p>Divulgue seu comércio.</p>
+
+                                <a href="cursos.html" class="btn-primary">
+
+                                    Começar
+
+                                </a>
+
+                            </div>
+
+                            <div class="dashboard-card">
+
+                                <h3>Precificação</h3>
+
+                                <p>Aprenda a definir preços.</p>
+
+                                <a href="cursos.html" class="btn-primary">
+
+                                    Começar
+
+                                </a>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </section>
+
+                <div class="container" id="meu-comercio">
+
+                    <h2>Meu Comércio</h2>
+
+                    <div class="comercio-card" id="comercio-card">
+
+                        <div class="comercio-header">
+
+                            <div class="comercio-icon">
+                                <i class="fa-solid fa-store"></i>
+                            </div>
+
+                            <h3 id="comercio-nome">Mercadinho do Kaio</h3>
+
+                        </div>
+
+                        <div class="comercio-info">
+
+                            <p><i class="fa-solid fa-tag"></i> Categoria: <span id="comercio-categoria">Mercado</span>
+                            </p>
+
+                            <p><i class="fa-solid fa-phone"></i> Telefone: <span id="comercio-telefone">(11)
+                                    99999-9999</span></p>
+
+                            <p><i class="fa-solid fa-location-dot"></i> Cidade: <span id="comercio-cidade">São
+                                    Paulo</span></p>
+
+                        </div>
+
+                        <a href="editar.html" class="btn-primary">
+
+                            Editar Informações
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <div class="acoes-grid">
+
+                <a href="#" class="acao" id="btn-registrar-receita">
+
+                    <i class="fa-solid fa-circle-plus"></i>
+
+                    Registrar Receita
+
+                </a>
+
+                <a href="#" class="acao" id="btn-registrar-despesa">
+
+                    <i class="fa-solid fa-circle-minus"></i>
+
+                    Registrar Despesa
+
+                </a>
+
+                <a href="#" class="acao">
+
+                    <i class="fa-solid fa-store"></i>
+
+                    Meu Comércio
+
+                </a>
+
+                <a href="cursos.html" class="acao">
+
+                    <i class="fa-solid fa-book"></i>
+
+                    Cursos
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="movimentacoes">
+
+        <div class="container">
+
+            <h2>Últimas movimentações</h2>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Data</th>
+
+                        <th>Descrição</th>
+
+                        <th>Valor</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody id="tabela-movimentacoes">
+
+                    <tr>
+
+                        <td>02/07/2026</td>
+
+                        <td>Venda de Produtos</td>
+
+                        <td style="color:green;">+ R$ 850,00</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>01/07/2026</td>
+
+                        <td>Compra de Mercadorias</td>
+
+                        <td style="color:red;">- R$ 300,00</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>30/06/2026</td>
+
+                        <td>Pagamento de Energia</td>
+
+                        <td style="color:red;">- R$ 180,00</td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </section>
+
+    <section class="grafico">
+
+        <div class="container">
+
+            <h2>Resumo Financeiro</h2>
+
+            <canvas id="graficoFinanceiro"></canvas>
+
+        </div>
+
+    </section>
+
+    <footer>
+
+        <div class="copyright">
+
+            &copy; 2026 Finanças da Quebrada • Todos os direitos reservados
+
+        </div>
+
+    </footer>
+
+    <!-- MODAL RECEITA/DESPESA -->
+
+    <div id="modal-financa" class="modal-overlay" style="display:none;">
+
+        <div class="modal-card">
+
+            <h3 id="modal-financa-titulo">Registrar Receita</h3>
+
+            <input type="hidden" id="financa-tipo">
+
+            <div class="input-group">
+                <label for="financa-descricao">Descrição</label>
+                <input type="text" id="financa-descricao" placeholder="Ex: Venda de produtos">
+            </div>
+
+            <div class="input-group">
+                <label for="financa-valor">Valor (R$)</label>
+                <input type="number" id="financa-valor" placeholder="Ex: 150.00" step="0.01" min="0">
+            </div>
+
+            <div class="modal-actions">
+                <button id="btn-cancelar-financa" class="btn-secondary">Cancelar</button>
+                <button id="btn-salvar-financa" class="btn-primary">Salvar</button>
             </div>
 
         </div>
 
     </div>
 
-</section>
+    <div id="toast-financa" class="toast">Salvo!</div>
 
-<div class="container">
+    <script>
 
-<h1>Olá, Empreendedor 👋</h1>
+        const ctx = document.getElementById('graficoFinanceiro');
 
-<p>
+        new Chart(ctx, {
 
-Bem-vindo ao Finanças da Quebrada.
+            type: 'bar',
 
-Acompanhe seu comércio e organize suas finanças.
+            data: {
 
-</p>
+                labels: ['Janeiro', 'Fevereiro', 'Março', 'Abril'],
 
-<div class="dashboard-cards">
+                datasets: [
 
-<div class="dashboard-card">
+                    {
 
-<i class="fa-solid fa-wallet"></i>
+                        label: 'Receitas',
 
-<h3>Receitas</h3>
+                        data: [3000, 4200, 5500, 6200]
 
-<h2>R$ 12.500</h2>
+                    },
 
-</div>
+                    {
 
-<div class="dashboard-card">
+                        label: 'Despesas',
 
-<i class="fa-solid fa-money-bill-wave"></i>
+                        data: [1800, 2100, 2600, 3000]
 
-<h3>Despesas</h3>
+                    }
 
-<h2>R$ 6.400</h2>
+                ]
 
-</div>
+            }
 
-<div class="dashboard-card">
+        });
 
-<i class="fa-solid fa-chart-line"></i>
+    </script>
 
-<h3>Saldo</h3>
-
-<h2>R$ 6.100</h2>
-
-</div>
-
-<div class="dashboard-card">
-
-<i class="fa-solid fa-graduation-cap"></i>
-
-<h3>Cursos</h3>
-
-<h2>12</h2>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<section class="acoes">
-
-<div class="container">
-
-<h2>Ações rápidas</h2>
-
-<section class="comercio">
-
-<section class="cursos-dashboard">
-
-<div class="container">
-
-<h2>Cursos disponíveis</h2>
-
-<div class="dashboard-cards cursos-grid" id="cursos-lista-dashboard">
-
-<div class="dashboard-card">
-
-<h3>Educação Financeira</h3>
-
-<p>Aprenda a organizar seu dinheiro.</p>
-
-<a href="#" class="btn-primary">
-
-Começar
-
-</a>
-
-</div>
-
-<div class="dashboard-card">
-
-<h3>Marketing Digital</h3>
-
-<p>Divulgue seu comércio.</p>
-
-<a href="#" class="btn-primary">
-
-Começar
-
-</a>
-
-</div>
-
-<div class="dashboard-card">
-
-<h3>Precificação</h3>
-
-<p>Aprenda a definir preços.</p>
-
-<a href="#" class="btn-primary">
-
-Começar
-
-</a>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<div class="container" id="meu-comercio">
-
-<h2>Meu Comércio</h2>
-
-<div class="comercio-card" id="comercio-card">
-
-<div class="comercio-header">
-
-<div class="comercio-icon">
-<i class="fa-solid fa-store"></i>
-</div>
-
-<h3 id="comercio-nome">Mercadinho do Kaio</h3>
-
-</div>
-
-<div class="comercio-info">
-
-<p><i class="fa-solid fa-tag"></i> Categoria: <span id="comercio-categoria">Mercado</span></p>
-
-<p><i class="fa-solid fa-phone"></i> Telefone: <span id="comercio-telefone">(11) 99999-9999</span></p>
-
-<p><i class="fa-solid fa-location-dot"></i> Cidade: <span id="comercio-cidade">São Paulo</span></p>
-
-</div>
-
-<a href="editar.html" class="btn-primary">
-
-Editar Informações
-
-</a>
-
-</div>
-
-</div>
-
-</section>
-
-<div class="acoes-grid">
-
-<a href="#" class="acao">
-
-<i class="fa-solid fa-circle-plus"></i>
-
-Registrar Receita
-
-</a>
-
-<a href="#" class="acao">
-
-<i class="fa-solid fa-circle-minus"></i>
-
-Registrar Despesa
-
-</a>
-
-<a href="#" class="acao">
-
-<i class="fa-solid fa-store"></i>
-
-Meu Comércio
-
-</a>
-
-<a href="#" class="acao">
-
-<i class="fa-solid fa-book"></i>
-
-Cursos
-
-</a>
-
-</div>
-
-</div>
-
-</section>
-
-<section class="movimentacoes">
-
-<div class="container">
-
-<h2>Últimas movimentações</h2>
-
-<table>
-
-<thead>
-
-<tr>
-
-<th>Data</th>
-
-<th>Descrição</th>
-
-<th>Valor</th>
-
-</tr>
-
-</thead>
-
-<tbody>
-
-<tr>
-
-<td>02/07/2026</td>
-
-<td>Venda de Produtos</td>
-
-<td style="color:green;">+ R$ 850,00</td>
-
-</tr>
-
-<tr>
-
-<td>01/07/2026</td>
-
-<td>Compra de Mercadorias</td>
-
-<td style="color:red;">- R$ 300,00</td>
-
-</tr>
-
-<tr>
-
-<td>30/06/2026</td>
-
-<td>Pagamento de Energia</td>
-
-<td style="color:red;">- R$ 180,00</td>
-
-</tr>
-
-</tbody>
-
-</table>
-
-</div>
-
-</section>
-
-<section class="grafico">
-
-<div class="container">
-
-<h2>Resumo Financeiro</h2>
-
-<canvas id="graficoFinanceiro"></canvas>
-
-</div>
-
-</section>
-
-<footer>
-
-<div class="copyright">
-
-&copy; 2026 Finanças da Quebrada • Todos os direitos reservados
-
-</div>
-
-</footer>
-
-<script>
-
-const ctx = document.getElementById('graficoFinanceiro');
-
-new Chart(ctx,{
-
-type:'bar',
-
-data:{
-
-labels:['Janeiro','Fevereiro','Março','Abril'],
-
-datasets:[
-
-{
-
-label:'Receitas',
-
-data:[3000,4200,5500,6200]
-
-},
-
-{
-
-label:'Despesas',
-
-data:[1800,2100,2600,3000]
-
-}
-
-]
-
-}
-
-});
-
-</script>
-
-<script src="js/dashboard-sync.js"></script>
-<!-- ♿ ACESSIBILIDADE (USERWAY) -->
-<script>
-  window.addEventListener("DOMContentLoaded", function () {
-    var s = document.createElement("script");
-    s.src = "https://cdn.userway.org/widget.js";
-    s.setAttribute("data-account", "SEU_ID_AQUI");
-    document.body.appendChild(s);
-  });
-</script>
+    <script src="js/dashboard-sync.js"></script>
+    <script src="js/financas.js"></script>
+    <!-- ♿ ACESSIBILIDADE (USERWAY) -->
+    <script>
+        window.addEventListener("DOMContentLoaded", function () {
+            var s = document.createElement("script");
+            s.src = "https://cdn.userway.org/widget.js";
+            s.setAttribute("data-account", "SEU_ID_AQUI");
+            document.body.appendChild(s);
+        });
+    </script>
 </body>
 
 </html>
