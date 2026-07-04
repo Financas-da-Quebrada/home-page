@@ -12,7 +12,8 @@
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="css/style.css">
 
@@ -24,73 +25,85 @@
 
 <body>
 
-<header>
+    <header>
 
-<div class="container">
+        <div class="container">
 
-<a href="index.html" class="logo">
+            <a href="index.html" class="logo">
 
-<img src="img/logo.png" alt="Logo">
+                <img src="img/logo.png" alt="Logo">
 
-</a>
+            </a>
 
-<nav>
+            <nav>
 
-<ul>
+                <ul>
 
-<li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
 
-<li><a href="cursos.html">Cursos</a></li>
+                    <li><a href="cursos.html">Cursos</a></li>
 
-<li><a href="editar.html">Editar</a></li>
+                    <li><a href="editar.html">Editar</a></li>
 
-<li><a href="#">Perfil</a></li>
+                    <li><a href="#">Perfil</a></li>
 
-</ul>
+                </ul>
 
-</nav>
+            </nav>
 
-<div class="header-buttons">
+            <div class="header-buttons">
 
-<a href="index.html" class="btn-header">
+                <a href="index.html" class="btn-header">
 
-Sair
+                    Sair
 
-</a>
+                </a>
 
-</div>
+            </div>
 
-</div>
+        </div>
 
-</header>
+    </header>
 
-<section class="dashboard">
+    <section class="dashboard">
 
-<div class="container">
+        <div class="container">
 
-<h1>Meus Cursos</h1>
+            <h1>Meus Cursos</h1>
 
-<p>Acompanhe seu progresso nos cursos disponíveis.</p>
+            <p>Acompanhe seu progresso nos cursos disponíveis.</p>
 
-<div id="cursos-progresso" class="dashboard-cards cursos-grid">
-<!-- Cursos são inseridos aqui via JavaScript -->
-</div>
+            <div id="cursos-progresso" class="dashboard-cards cursos-grid">
+                <!-- Cursos são inseridos aqui via JavaScript -->
+            </div>
 
-</div>
+        </div>
 
-</section>
+    </section>
 
-<footer>
+    <footer>
 
-<div class="copyright">
+        <div class="copyright">
 
-© 2026 Finanças da Quebrada
+            &copy; 2026 Finanças da Quebrada • Todos os direitos reservados
 
-</div>
 
-</footer>
+        </div>
 
-<script src="js/cursos.js"></script>
+    </footer>
+
+    <script src="js/cursos.js"></script>
+
+    </footer>
+    <!-- ♿ ACESSIBILIDADE (USERWAY) -->
+    <script>
+        window.addEventListener("DOMContentLoaded", function () {
+            var s = document.createElement("script");
+            s.src = "https://cdn.userway.org/widget.js";
+            s.setAttribute("data-account", "SEU_ID_AQUI");
+            document.body.appendChild(s);
+        });
+    </script>
 
 </body>
 
