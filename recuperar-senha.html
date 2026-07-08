@@ -3,17 +3,17 @@
 
 <head>
 
-<meta charset="UTF-8">
+    <meta charset="UTF-8">
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Recuperar Senha</title>
+    <title>Recuperar Senha</title>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 
@@ -21,52 +21,50 @@
 
 <section class="login">
 
-<div class="container">
+    <div class="container">
 
-<div class="login-box">
+        <div class="login-box">
 
-<img src="img/logo.png" class="logo-login">
+            <img src="img/logo.png" class="logo-login" alt="Logo">
 
-<h2>Recuperar senha</h2>
+            <h2>Recuperar senha</h2>
 
-<p>
+            <p>
+                Digite seu e-mail cadastrado para receber um link de recuperação.
+            </p>
 
-Digite seu e-mail cadastrado para receber um link de recuperação.
+            <form action="email-enviado.html">
 
-</p>
+                <div class="input-group">
 
-<form>
+                    <label for="email">E-mail</label>
 
-<div class="input-group">
+                    <input
+                        id="email"
+                        name="email"
+                        type="email"
+                        placeholder="Digite seu e-mail"
+                        required>
 
-<label>E-mail</label>
+                </div>
 
-<input
-type="email"
-placeholder="Digite seu e-mail"
-required>
+                <button type="submit" class="btn-login">
+                    Enviar link
+                </button>
 
-</div>
+            </form>
 
-<a href="email-enviado.html" class="btn-login">Enviar link</a>
+            <div class="divisor">
+                <span>ou</span>
+            </div>
 
-</form>
+            <a href="login.html" class="btn-cadastro-login">
+                Voltar para o Login
+            </a>
 
-<div class="divisor">
+        </div>
 
-<span>ou</span>
-
-</div>
-
-<a href="login.html" class="btn-cadastro-login">
-
-Voltar para o Login
-
-</a>
-
-</div>
-
-</div>
+    </div>
 
 </section>
 

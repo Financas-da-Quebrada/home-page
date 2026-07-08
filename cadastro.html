@@ -85,11 +85,11 @@
 
 <p class="subtitulo">
 
-Preencha as informações abaixo.
+Preencha as informações abaixo. Todos os campos são obrigatórios.
 
 </p>
 
-<form action="dashboard.html">
+<form action="dashboard.html" id="formCadastro" novalidate>
 
 <div class="form-grid">
 
@@ -97,12 +97,15 @@ Preencha as informações abaixo.
 
 <div class="input-group">
 
-<label>Nome Completo</label>
+<label>Nome Completo *</label>
 
 <input
 type="text"
+name="nome"
 placeholder="Digite seu nome"
 required>
+
+<span class="error-msg">Este campo é obrigatório.</span>
 
 </div>
 
@@ -110,12 +113,15 @@ required>
 
 <div class="input-group">
 
-<label>Nome do Comércio</label>
+<label>Nome do Comércio *</label>
 
 <input
 type="text"
+name="comercio"
 placeholder="Nome do comércio"
 required>
+
+<span class="error-msg">Este campo é obrigatório.</span>
 
 </div>
 
@@ -123,9 +129,9 @@ required>
 
 <div class="input-group">
 
-<label>Categoria</label>
+<label>Categoria *</label>
 
-<select required>
+<select name="categoria" required>
 
 <option value="">Selecione</option>
 
@@ -143,18 +149,24 @@ required>
 
 </select>
 
+<span class="error-msg">Selecione uma categoria.</span>
+
 </div>
 
 <!-- Telefone -->
 
 <div class="input-group">
 
-<label>Telefone</label>
+<label>Telefone *</label>
 
 <input
 type="tel"
+name="telefone"
 placeholder="(11) 99999-9999"
+pattern="\(\d{2}\)\s?\d{4,5}-\d{4}"
 required>
+
+<span class="error-msg">Informe um telefone válido.</span>
 
 </div>
 
@@ -162,12 +174,16 @@ required>
 
 <div class="input-group">
 
-<label>WhatsApp</label>
+<label>WhatsApp *</label>
 
 <input
 type="tel"
+name="whatsapp"
 placeholder="(11) 99999-9999"
+pattern="\(\d{2}\)\s?\d{4,5}-\d{4}"
 required>
+
+<span class="error-msg">Informe um WhatsApp válido.</span>
 
 </div>
 
@@ -175,12 +191,15 @@ required>
 
 <div class="input-group">
 
-<label>Email</label>
+<label>Email *</label>
 
 <input
 type="email"
+name="email"
 placeholder="Digite seu email"
 required>
+
+<span class="error-msg">Informe um email válido.</span>
 
 </div>
 
@@ -188,12 +207,16 @@ required>
 
 <div class="input-group">
 
-<label>Senha</label>
+<label>Senha *</label>
 
 <input
 type="password"
+name="senha"
 placeholder="********"
+minlength="6"
 required>
+
+<span class="error-msg">A senha deve ter no mínimo 6 caracteres.</span>
 
 </div>
 
@@ -201,12 +224,16 @@ required>
 
 <div class="input-group">
 
-<label>Confirmar Senha</label>
+<label>Confirmar Senha *</label>
 
 <input
 type="password"
+name="confirmarSenha"
 placeholder="********"
+minlength="6"
 required>
+
+<span class="error-msg">As senhas não coincidem.</span>
 
 </div>
 
@@ -214,11 +241,16 @@ required>
 
 <div class="input-group">
 
-<label>CEP</label>
+<label>CEP *</label>
 
 <input
 type="text"
-placeholder="00000-000">
+name="cep"
+placeholder="00000-000"
+pattern="\d{5}-?\d{3}"
+required>
+
+<span class="error-msg">Informe um CEP válido.</span>
 
 </div>
 
@@ -226,11 +258,15 @@ placeholder="00000-000">
 
 <div class="input-group">
 
-<label>Cidade</label>
+<label>Cidade *</label>
 
 <input
 type="text"
-placeholder="Cidade">
+name="cidade"
+placeholder="Cidade"
+required>
+
+<span class="error-msg">Este campo é obrigatório.</span>
 
 </div>
 
@@ -238,11 +274,15 @@ placeholder="Cidade">
 
 <div class="input-group">
 
-<label>Estado</label>
+<label>Estado *</label>
 
 <input
 type="text"
-placeholder="Estado">
+name="estado"
+placeholder="Estado"
+required>
+
+<span class="error-msg">Este campo é obrigatório.</span>
 
 </div>
 
@@ -250,11 +290,15 @@ placeholder="Estado">
 
 <div class="input-group">
 
-<label>Endereço</label>
+<label>Endereço *</label>
 
 <input
 type="text"
-placeholder="Rua">
+name="endereco"
+placeholder="Rua"
+required>
+
+<span class="error-msg">Este campo é obrigatório.</span>
 
 </div>
 
@@ -262,11 +306,15 @@ placeholder="Rua">
 
 <div class="input-group">
 
-<label>Número</label>
+<label>Número *</label>
 
 <input
 type="text"
-placeholder="Número">
+name="numero"
+placeholder="Número"
+required>
+
+<span class="error-msg">Este campo é obrigatório.</span>
 
 </div>
 
@@ -274,11 +322,15 @@ placeholder="Número">
 
 <div class="input-group">
 
-<label>Complemento</label>
+<label>Complemento *</label>
 
 <input
 type="text"
-placeholder="Opcional">
+name="complemento"
+placeholder="Apto, bloco, ponto de referência..."
+required>
+
+<span class="error-msg">Este campo é obrigatório.</span>
 
 </div>
 
@@ -290,7 +342,7 @@ placeholder="Opcional">
 
 <label>
 
-<input type="checkbox" required>
+<input type="checkbox" name="termos" required>
 
 Aceito os termos de uso.
 
@@ -298,7 +350,7 @@ Aceito os termos de uso.
 
 <label>
 
-<input type="checkbox">
+<input type="checkbox" name="novidades">
 
 Desejo receber novidades da plataforma.
 
@@ -306,7 +358,7 @@ Desejo receber novidades da plataforma.
 
 </div>
 
-<a href="dashboard.html" class="btn-login">Cadastrar o seu comércio</a>
+<button type="submit" class="btn-login">Cadastrar o seu comércio</button>
 
 </form>
 
@@ -421,6 +473,64 @@ O Finanças da Quebrada conecta empreendedores locais, oferece educação financ
     s.src = "https://cdn.userway.org/widget.js";
     s.setAttribute("data-account", "SEU_ID_AQUI");
     document.body.appendChild(s);
+  });
+</script>
+
+<!-- ================= VALIDAÇÃO DO FORMULÁRIO ================= -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var form = document.getElementById("formCadastro");
+    var senha = form.querySelector('[name="senha"]');
+    var confirmarSenha = form.querySelector('[name="confirmarSenha"]');
+
+    function mostrarErro(campo, mostrar) {
+      var grupo = campo.closest(".input-group");
+      if (!grupo) return;
+      grupo.classList.toggle("invalid", mostrar);
+    }
+
+    function validarCampo(campo) {
+      var valido = campo.checkValidity();
+
+      if (campo === confirmarSenha) {
+        valido = valido && confirmarSenha.value === senha.value;
+      }
+
+      mostrarErro(campo, !valido);
+      return valido;
+    }
+
+    form.querySelectorAll("input, select").forEach(function (campo) {
+      campo.addEventListener("blur", function () {
+        validarCampo(campo);
+      });
+      campo.addEventListener("input", function () {
+        if (campo.closest(".input-group").classList.contains("invalid")) {
+          validarCampo(campo);
+        }
+      });
+    });
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      var camposValidos = true;
+      form.querySelectorAll("input, select").forEach(function (campo) {
+        if (!validarCampo(campo)) {
+          camposValidos = false;
+        }
+      });
+
+      if (camposValidos) {
+        form.submit();
+      } else {
+        var primeiroInvalido = form.querySelector(".invalid input, .invalid select");
+        if (primeiroInvalido) {
+          primeiroInvalido.scrollIntoView({ behavior: "smooth", block: "center" });
+          primeiroInvalido.focus();
+        }
+      }
+    });
   });
 </script>
 

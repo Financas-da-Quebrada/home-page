@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 
 <head>
 
@@ -18,78 +18,64 @@
 
 <body>
 
-<section class="login">
+    <section class="login">
 
-<div class="container">
+        <div class="container">
 
-<div class="login-box">
+            <div class="login-box">
 
-<img src="img/logo.png" class="logo-login">
+                <img src="img/logo.png" class="logo-login">
 
-<h2>Bem-vindo de volta!</h2>
+                <h2>Bem-vindo de volta!</h2>
 
-<p>
-Entre na sua conta para continuar utilizando a plataforma.
-</p>
+                <p>
+                    Entre na sua conta para continuar utilizando a plataforma.
+                </p>
 
-<form>
+                <form action="dashboard.html">
 
-<div class="input-group">
+                    <div class="input-group">
+                        <label>E-mail</label>
+                        <input type="email" placeholder="Digite seu e-mail" required>
+                    </div>
 
-<label>E-mail</label>
+                    <div class="input-group">
+                        <label>Senha</label>
+                        <input type="password" placeholder="Digite sua senha" required>
+                    </div>
 
-<input
-type="email"
-placeholder="Digite seu e-mail"
-required>
+                    <div class="opcoes">
+                        <label>
+                            <input type="checkbox">
+                            Lembrar-me
+                        </label>
 
-</div>
+                        <a href="recuperar-senha.html">Esqueci minha senha</a>
+                    </div>
 
-<div class="input-group">
+                    <button type="submit" class="btn-login">
+                        Entrar
+                    </button>
 
-<label>Senha</label>
+                </form>
 
-<input
-type="password"
-placeholder="Digite sua senha"
-required>
+                <div class="divisor">
 
-</div>
+                    <span>ou</span>
 
-<div class="opcoes">
+                </div>
 
-<label>
+                <a href="cadastro.html" class="btn-cadastro-login">
 
-<input type="checkbox">
+                    Criar nova conta
 
-Lembrar-me
+                </a>
 
-</label>
+            </div>
 
-<a href="recuperar-senha.html">Esqueci minha senha</a>
+        </div>
 
-</div>
-
-<a href="dashboard.html" class="btn-login">Entrar</a>
-</form>
-
-<div class="divisor">
-
-<span>ou</span>
-
-</div>
-
-<a href="cadastro.html" class="btn-cadastro-login">
-
-Criar nova conta
-
-</a>
-
-</div>
-
-</div>
-
-</section>
+    </section>
 
 </body>
 

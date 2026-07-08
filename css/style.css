@@ -3042,3 +3042,81 @@ border-radius:14px;
 font-weight:700;
 
 }
+.login{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg,#F7F4FF,#EEFDFB);
+    padding: 20px;
+}
+
+.login .container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box{
+    width: 100%;
+    max-width: 520px;
+    background: #fff;
+    padding: 45px;
+    border-radius: 25px;
+    box-shadow: 0 20px 50px rgba(0,0,0,.12);
+}
+
+.error-msg {
+  display: none;
+  color: #e74c3c;
+  font-size: 0.85rem;
+  margin-top: 4px;
+}
+
+.input-group.invalid input,
+.input-group.invalid select {
+  border-color: #e74c3c;
+}
+
+.input-group.invalid .error-msg {
+  display: block;
+}
+
+/* VALIDAÇÃO DE FORMULÁRIO */
+
+.error-msg {
+    display: none;
+    color: #E53935;
+    font-size: 13px;
+    font-weight: 500;
+    margin-top: 6px;
+}
+
+.input-group.invalid input,
+.input-group.invalid select {
+    border-color: #E53935;
+    box-shadow: 0 0 8px rgba(229, 57, 53, .15);
+}
+
+.input-group.invalid .error-msg {
+    display: block;
+}
+
+.input-group.invalid label {
+    color: #E53935;
+}
+
+/* PLACEHOLDER DOS CAMPOS */
+
+.input-group input::placeholder,
+.input-group select::placeholder {
+    color: #999;
+    opacity: 1;
+    font-size: 15px;
+    font-family: 'Inter', sans-serif;
+}
+
+.input-group input:focus::placeholder {
+    color: #bbb;
+}
